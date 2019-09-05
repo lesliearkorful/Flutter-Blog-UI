@@ -300,9 +300,7 @@ class SectionItem extends StatelessWidget {
                   Text('${article.title}',
                   softWrap: true,
                     style: TextStyle(
-                      //color: Colors.black.withOpacity(0.7),
                       fontSize: 18
-                      //fontWeight: FontWeight.bold
                     )
                   ),
                 ]
