@@ -150,8 +150,8 @@ class Card extends StatelessWidget {
                           style: TextStyle(
                             color: Colors.white,
                             fontFamily: 'Montserrat',
-                            //fontWeight: FontWeight.w500,
-                            fontSize: 28,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
                           ),
                         ),
 
@@ -270,6 +270,7 @@ class SectionItem extends StatelessWidget {
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+
             ClipRRect(
               borderRadius: BorderRadius.circular(14),
               child: Image.asset(article.cover,
@@ -278,19 +279,24 @@ class SectionItem extends StatelessWidget {
                 fit: BoxFit.cover,
               )
             ),
+
             SizedBox( width: 15 ),
+
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 textDirection: TextDirection.ltr,
                 children: <Widget>[
+
                   Text('${categories[article.category]}',
                     style: TextStyle(
                       color: Colors.pink,
                       fontSize: 14,
                     ),
                   ),
+
                   SizedBox( height : 5 ),
+                  
                   Text('${article.title}',
                   softWrap: true,
                     style: TextStyle(
