@@ -159,7 +159,6 @@ class _ArticlePageState extends State<ArticlePage> {
               alignment: Alignment.topLeft,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
 
                   IconButton(
@@ -170,8 +169,9 @@ class _ArticlePageState extends State<ArticlePage> {
                   ),
                    
                   IconButton(
-                    //padding: EdgeInsets.all(20),
-                    iconSize: 30,
+                    alignment: Alignment.bottomCenter,
+                    padding: EdgeInsets.only(right: 20),
+                    iconSize: 40,
                     icon: Icon(
                       isSaved ? saveIcon : savedIcon,
                       color: topReached ? Colors.pink : Colors.white
